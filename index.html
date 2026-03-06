@@ -3,72 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cine en casa</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>CINE.TV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>CINE.TV</header>
 
 <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Peliculas</a>
-    <a href="#">Serie</a>
-    <a href="#">Animación</a>
+    <a href="index.html">Inicio</a>
+    <a href="peliculas.html">Películas</a>
+    <a href="series.html">Series</a>
+    <a href="animacion.html">Animación</a>
 </nav>
 
 <section class="hero">
     <h1>Películas</h1>
     <form class="search-box" id="search-form">
-        <input type="search" id="search-input" placeholder="Buscar por nombre" aria-label="Search">
-        <button type="películas 1">Buscar</button>
+        <input type="search" id="search-input" placeholder="Buscar por nombre..." aria-label="Search">
+        <button type="submit">Buscar</button>
     </form>
 </section>
 
-<section class="movies" id="movies-section">
-    <div class="movie-card" data-name="Película 1">
-        <a href="#">
-            <img src="imag/lorax.jpg" alt="Película">
-        </a>
-          <div class="contenedor-botones">
-            <button><a href="#">Ver</a></button>
-            <button><a href="#">Favoritos</a></button>
+<main class="movies" id="movies-section">
+    <div class="movie-card" data-name="El Lorax">
+        <img src="imag/lorax.jpg" alt="El Lorax">
+        <div class="movie-info">
+            <div class="contenedor-botones">
+                <a href="#" class="btn-ver">Ver</a>
+                <a href="lorax.html" class="btn-desc">Descripción</a>
+            </div>
         </div>
     </div>
-    <div class="movie-card" data-name="Película 2">
-        <a href="#">
-            <img src="imag/shadow.jpg" alt="Película">
-            <h3>Película 2</h3>
-        </a>
-    </div>
-    <div class="movie-card" data-name="Película 3">
-        <a href="#">
-            <img src="imag/memorias.avif" alt="Película">
-            <h3>Película 3</h3>
-        </a>
-    </div>
-    <div class="movie-card" data-name="Película 3">
-        <a href="#">
-            <img src="imag/capitan.jpeg" alt="Película">
-            <h3>Película 4</h3>
-        </a>
-    </div>
-    <div class="movie-card" data-name="Película 3">
-        <a href="#">
-            <img src="imag/lupi.jpeg" alt="Película">
-            <h3>Película 3</h3>
-        </a>
-    </div>
-    <div class="movie-card" data-name="Película 3">
-        <a href="#">
-            <img src="imag/casa de papel.jpeg" alt="Película">
-            <h3>Película 3</h3>
-        </a>
-    </div>
-</section>
 
-<script src="script.js"></script> 
+    <div class="movie-card" data-name="Shadow">
+        <img src="imag/shadow.jpg" alt="Shadow">
+        <div class="movie-info">
+            <div class="contenedor-botones">
+                <a href="#" class="btn-ver">Ver</a>
+                <a href="shadow.html" class="btn-desc">Descripción</a>
+            </div>
+        </div>
+    </div>
+    
+      <div class="movie-card" data-name="casa de papel">
+        <img src="imag/casa de papel.jpeg" alt="casa de papel">
+        <div class="movie-info">
+            <div class="contenedor-botones">
+                <a href="#" class="btn-ver">Ver</a>
+                <a href="la-casa-de-papel.html" class="btn-desc">Descripción</a>
+            </div>
+        </div>
+    </div>
 
-<footer></footer>
+      <div class="movie-card" data-name="lupin">
+        <img src="imag/lupi.jpeg" alt="lupin">
+        <div class="movie-info">
+            <div class="contenedor-botones">
+                <a href="#" class="btn-ver">Ver</a>
+                <a href="lupi.html" class="btn-desc">Descripción</a>
+            </div>
+        </div>
+    </div>
 
+      <div class="movie-card" data-name="memoir of a Snail">
+        <img src="imag/memorias.avif"alt="memoir of a Snail">
+        <div class="movie-info">
+            <div class="contenedor-botones">
+                <a href="#" class="btn-ver">Ver</a>
+                <a href="memorias.html" class="btn-desc">Descripción</a>
+            </div>
+        </div>
+    </div>
+    </main>
+<footer>
+    &copy; 2024 CINE.TV - Todos los derechos reservados.
+</footer>
 </body>
 </html>
